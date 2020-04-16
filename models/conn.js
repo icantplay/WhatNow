@@ -6,7 +6,7 @@ var app = express();
 var config = {
     user: 'sa',
     password: '1234567890',
-    server: 'localhost',
+    server: '192.168.1.69', 
     database: 'master',
     port: 1433
 }
