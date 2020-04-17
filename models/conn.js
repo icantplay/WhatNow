@@ -1,14 +1,12 @@
-var sql = require("mssql");
+var mysql = require("mysql");
 var express = require('express');
 var app = express();
 
-// config for your database
-var config = {
-    user: 'sa',
-    password: '1234567890',
-    server: '192.168.1.69', 
-    database: 'master',
-    port: 1433
-}
 
-module.exports.config = config;
+var pool = mysql.createPool({
+    host: 'remotemysql.com',
+    user: '99BVw3APBg',
+    password: 'jdz6HQqGOZ',
+    database: '99BVw3APBg'
+});
+exports.pool = pool;
