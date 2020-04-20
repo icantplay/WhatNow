@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WhatNow</string>
+    <string name="whatnow">WhatNow</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="registerphrase">Already registred! Login Me.</string>
+    <string name="evento_x">Evento X</string>
+    <string name="data">Data</string>
+    <string name="descri_o">Descrição</string>
+    <string name="submit">submit</string>
+    <string name="name">Name</string>
+    <string name="hour">Hour</string>
+
+
+</resources>
