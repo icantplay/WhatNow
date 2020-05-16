@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WhatNow</title>
+	<link rel="stylesheet" href="./stylesheet/mainPage.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascripts/event.js"></script>
+    <script src="javascripts/spot.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".wrapper").toggleClass("collapse");
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="one"></div>
+       <div class="two"></div>
+       <div class="three"></div>
+    </div>
+    <div class="top_menu">
+      <div class="logo">WhatNow</div>
+      <ul>
+        <li><a href="#">
+          <i class="fas fa-search"></i></a></li>
+        <li><a href="#">
+          <i class="fas fa-bell"></i>
+          </a></li>
+        <li><a href="#">
+          <i class="fas fa-user"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar">
+      <ul>
+        <li><a href="#">
+          <span class="icon"><i class="far fa-calendar-alt"></i></span>
+          <span class="title" onclick="showEvents()">Events</span></a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-file-video"></i></span>
+          <span id="title" onclick="showSpots()">Spots</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-chart-pie"></i></span>
+          <span class="title">Analysis</span>
+          </a></li>
+        
+     
+    </ul>
+  </div>
+  
+  <div class="main_container">
+      <div id= events>
+     <!--<div class="item">
+    <p>Nome do Evento</p>
+     <p> Descrição bancana</p>
+     <a href="#">Detalhes</a> 
+    </div>
+    <div class="item">
+      Nome do Evento
+      <p> Descrição bancana</p>
+      <a href="#">Detalhes</a> 
+    </div>
+    <div class="item">
+      Nome do evento
+      <p> Descrição bancana</p>
+      <a href="#">Detalhes</a> 
+    </div>
+    <div class="item">
+      Nome do evento
+      <p> Descrição bancana</p>
+        <a href="#">Detalhes</a>  </div>
+      </div>-->
+  </div> 
+</div>
+	
+</body>
+</html>
