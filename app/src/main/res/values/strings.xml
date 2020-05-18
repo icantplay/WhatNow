@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">WhatNow</string>
     <string name="whatnow">WhatNow</string>
-    <string name="username">Username</string>
+
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
@@ -13,6 +13,11 @@
     <string name="submit">submit</string>
     <string name="name">Name</string>
     <string name="hour">Hour</string>
+    <string name="escolha_um_utilizador">Escolha um utilizador</string>
+    <string name="escolha_o_intervalo_de_ping">ESCOLHA O INTERVALO DE PING</string>
+    <string name="de_10_em_10_minutos">De 10 em 10 minutos</string>
+    <string name="de_5_em_5_minutos">De 5 em 5 minutos</string>
+    <string name="done">Done</string>
 
 
 </resources>

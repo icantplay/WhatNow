@@ -19,7 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Principal extends AppCompatActivity {
+public class Eventos extends AppCompatActivity {
 
     RecyclerView recyclerView;
     private List<EventInfo> events;

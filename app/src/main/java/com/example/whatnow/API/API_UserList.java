@@ -1,24 +1,22 @@
 package com.example.whatnow.API;
 
-import android.renderscript.ScriptIntrinsicYuvToRGB;
 import android.util.Log;
 
+import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.example.whatnow.API.Queue;
-import com.example.whatnow.API.VolleyCallback;
 
 import org.json.JSONObject;
 
-public class API_Autenticação {
 
 
+public class API_UserList {
     private static String url = "https://what--now.herokuapp.com";
 
 
-    public static void getEventos(Queue queue, final VolleyCallback callback) {
-        url += "/";
+    public static void getUsername(Queue queue, final VolleyCallback callback) {
+        url += "/Username";
 
         JsonObjectRequest req = new JsonObjectRequest(url, null, new Response.Listener<JSONObject>() {
 
@@ -45,5 +43,6 @@ public class API_Autenticação {
 
         queue.addToRequestQueue(req);
     }
+
 
 }

@@ -3,6 +3,7 @@
     package="com.example.whatnow">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,10 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Evento.EventDetails"></activity>
-        <activity android:name=".Evento.Principal" />
-        <activity android:name=".Autenticação.Registo" />
-        <activity android:name=".Autenticação.Login">
+        <activity android:name=".Spot.Spots"></activity>
+        <activity android:name=".User.Ping" />
+        <activity android:name=".User.UserList" />
+        <activity android:name=".TypeofSpace" />
+        <activity android:name=".Evento.EventDetails" />
+        <activity android:name=".Evento.Eventos" />
+        <activity android:name=".PrimeiraPágina.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

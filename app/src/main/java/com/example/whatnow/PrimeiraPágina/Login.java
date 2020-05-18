@@ -1,4 +1,4 @@
-package com.example.whatnow.Autenticação;
+package com.example.whatnow.PrimeiraPágina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.whatnow.R;
-import com.example.whatnow.Evento.Principal;
+import com.example.whatnow.TypeofSpace;
+import com.example.whatnow.User.UserList;
 
 public class Login extends AppCompatActivity {
     private Button btnLogin;
@@ -18,30 +19,30 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnRegister = findViewById(R.id.btnRegister);
+        btnRegister = findViewById(R.id.btnPingTest);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openRegisto();
+                openUserList();
             }
         });
-        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin = findViewById(R.id.btnAplicação);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openPrincipal();
+                openTypeofSpace();
             }
         });
     }
 
-    private void openRegisto() {
-        Intent intent = new Intent(this, Registo.class);
+    private void openUserList() {
+        Intent intent = new Intent(this, UserList.class);
         startActivity(intent);
 
     }
-    private void openPrincipal(){
+    private void openTypeofSpace(){
 
-        Intent intent = new Intent(this, Principal.class);
+        Intent intent = new Intent(this, TypeofSpace.class);
         startActivity(intent);
     }
 }
